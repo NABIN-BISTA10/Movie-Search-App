@@ -114,7 +114,7 @@ export default function App() {
               setDarkMode(newMode);
               localStorage.setItem("darkMode", JSON.stringify(newMode));
             }}
-            className={`p-3 rounded-full transition-all duration-200 ${
+            className={`p-3 rounded-full transition-all duration-200 cursor-pointer ${
               darkMode 
                 ? "bg-gray-800 hover:bg-gray-700 text-yellow-400" 
                 : "bg-gray-100 hover:bg-gray-200 text-gray-700"

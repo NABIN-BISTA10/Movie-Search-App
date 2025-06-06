@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { CiSearch } from "react-icons/ci";
 
 export default function SearchBar({ searchTerm, setSearchTerm, onSearch }) {
   const handleSubmit = (e) => {
@@ -14,8 +13,8 @@ export default function SearchBar({ searchTerm, setSearchTerm, onSearch }) {
       role="search"
     >
       <div className="relative w-2/3">
-        <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-          <FontAwesomeIcon icon={faMagnifyingGlass} className="text-sm" />
+        <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl">
+          <CiSearch />
         </span>
         <input
           type="text"
